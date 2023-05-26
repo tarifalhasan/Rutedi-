@@ -7,21 +7,36 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+footer {
+  background: linear-gradient(
+      101.56deg,
+      #1f4690 -1.2%,
+      #3a5ba0 50.29%,
+      #597cc5 78.27%,
+      #5483e4 96.29%
+    ),
+    #d9d9d9;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  .btn_primary {
+    @apply bg-orange py-3  rounded-md text-xs xl:text-lg uppercase font-bold text-white px-10;
+  }
+  .btn_secondary {
+    @apply bg-transparent border-2 border-orange py-3  rounded-md text-xs xl:text-lg uppercase font-bold text-orange px-10;
+  }
+  .gradient {
+    background: linear-gradient(
+        101.56deg,
+        #1f4690 -1.2%,
+        #3a5ba0 50.29%,
+        #597cc5 78.27%,
+        #5483e4 96.29%
+      ),
+      #d9d9d9;
+  }
+}
+.mobile_navbar {
+  transform: translateX(0px) !important;
+  transition: 0.5s all ease !important;
 }
