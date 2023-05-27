@@ -4,7 +4,7 @@ import team1 from '../../public/images/team/1.svg';
 import Image from 'next/image';
 const Team = () => {
   return (
-    <section className="py-16">
+    <div id="team" className="py-16">
       <Container>
         <div className=" space-y-4">
           <h4 className="text-base font-bold text-orange text-center">TEAM</h4>
@@ -23,7 +23,7 @@ const Team = () => {
           />
         </div>
       </Container>
-    </section>
+    </div>
   );
 };
 

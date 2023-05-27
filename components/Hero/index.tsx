@@ -1,5 +1,5 @@
 'use client';
-
+import { BsFillTelephoneFill } from 'react-icons/bs';
 import Image from 'next/image';
 import React, { useRef } from 'react';
 
@@ -16,7 +16,10 @@ const Hero = () => {
   };
 
   return (
-    <section className=" relative  bg-mobile-bg md:bg-bg-image bg-no-repeat w-full h-full  grid  bg-cover bg-center min-h-screen body-font">
+    <div
+      id="home"
+      className=" relative  bg-mobile-bg md:bg-bg-image   bg-no-repeat w-full  grid  bg-cover h-full min-h-screen body-font"
+    >
       <div ref={scrollRef} className=" relative">
         <Container>
           <div className="  grid lg:grid-cols-2 place-items-center   py-[10rem]  md:py-[14rem] ">
@@ -41,28 +44,29 @@ const Hero = () => {
               />
             </div>
           </div>
+          <div className=" pb-20 md:pb-11   absolute  justify-center bottom-0 left-[37%] md:left-1/2 ">
+            <button
+              onClick={() =>
+                window.scrollTo({
+                  top: window.innerHeight,
+                  behavior: 'smooth',
+                })
+              }
+              className="flex-col items-center flex"
+            >
+              <span className=" text-lg text-white">Scroll Down</span>
+              <IoIosArrowDown className="text-white" />
+            </button>
+          </div>
         </Container>
       </div>
 
       <div className=" absolute bottom-0 right-0">
-        <button
-          onClick={() =>
-            window.scrollTo({
-              top: window.innerHeight,
-              behavior: 'smooth',
-            })
-          }
-        >
-          <Image src={phone} alt="phone" />
+        <button className=" w-[80px] grid place-items-center  h-[80px] rounded-full bg-orange  text-white">
+          <BsFillTelephoneFill size={32} />
         </button>
       </div>
-      <div className=" pb-11  absolute  justify-center bottom-0 left-1/2 ">
-        <button className="flex-col items-center flex">
-          <span className=" text-lg text-white">Scroll Down</span>
-          <IoIosArrowDown className="text-white" />
-        </button>
-      </div>
-    </section>
+    </div>
   );
 };
 

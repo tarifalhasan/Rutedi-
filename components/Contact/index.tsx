@@ -3,7 +3,7 @@ import Container from '../Container';
 
 const Contact = () => {
   return (
-    <section className=" bg-[#F6F6F6] py-12 ">
+    <div id="contact" className=" bg-[#F6F6F6] py-12 ">
       <Container>
         <div className="  flex gap-10  flex-col lg:flex-row ">
           <div className=" basis-[40%]">
@@ -171,7 +171,7 @@ const Contact = () => {
           </div>
         </div>
       </Container>
-    </section>
+    </div>
   );
 };
 

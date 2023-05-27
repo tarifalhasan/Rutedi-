@@ -41,7 +41,7 @@ const Services = () => {
   ];
 
   return (
-    <section className=" py-5 lg:py-24">
+    <div id="services" className=" py-5 lg:py-24">
       <Container>
         <div className=" gap-9 grid md:grid-cols-2 xl:grid-cols-3">
           <div className=" bg-muted py-7 px-6 min-h-[300px] rounded-md grid place-items-center">
@@ -73,7 +73,7 @@ const Services = () => {
           ))}
         </div>
       </Container>
-    </section>
+    </div>
   );
 };
 

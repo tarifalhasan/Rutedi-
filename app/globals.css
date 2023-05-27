@@ -35,6 +35,9 @@ footer {
       ),
       #d9d9d9;
   }
+  .active {
+    @apply text-orange relative before:absolute before:w-[70%] before:h-1 before:bg-orange before:bottom-0 before:top-[105%];
+  }
 }
 .mobile_navbar {
   transform: translateX(0px) !important;

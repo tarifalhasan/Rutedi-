@@ -59,7 +59,7 @@ const Methodology = () => {
   );
 
   return (
-    <section className=" pb-24">
+    <div id="methodology" className=" pb-24">
       <Container>
         <div className="  ">
           <div className="pb-16">
@@ -107,7 +107,7 @@ const Methodology = () => {
           </div>
         </div>
       </Container>
-    </section>
+    </div>
   );
 };
 
