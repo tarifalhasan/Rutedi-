@@ -55,7 +55,10 @@ const Hero = () => {
         </Container>
       </div>
 
-      <div id="phone_call" className=" fixed bottom-0 pb-12 right-0">
+      <div
+        id="phone_call"
+        className=" z-[99999999] fixed bottom-0 pb-12 right-0"
+      >
         <button className="w-[80px] grid place-items-center h-[80px] rounded-full bg-orange text-white">
           <BsFillTelephoneFill size={32} />
         </button>
