@@ -59,9 +59,11 @@ const Navbar = () => {
       <Container>
         <div className=" flex items-center justify-between">
           <div>
-            <Link to={'home'}>
-              <Logo />
-            </Link>
+            <>
+              <Link to={'home'}>
+                <Logo />
+              </Link>
+            </>
           </div>
           <ul className="flex  gap-4 items-center">
             <li>
@@ -75,7 +77,7 @@ const Navbar = () => {
                 onClick={() => handleClick('home')}
                 className={`${
                   activeLink === 'home' ? 'active' : ''
-                } text-xl font-normal`}
+                } text-xl font-normal  cursor-pointer`}
               >
                 Home
               </Link>
@@ -91,7 +93,7 @@ const Navbar = () => {
                 onClick={() => handleClick('services')}
                 className={`${
                   activeLink === 'services' ? 'active' : ''
-                } text-xl font-normal`}
+                } text-xl font-normal cursor-pointer`}
               >
                 Service
               </Link>
@@ -107,7 +109,7 @@ const Navbar = () => {
                 onClick={() => handleClick('methodology')}
                 className={`${
                   activeLink === 'methodology' ? 'active' : ''
-                } text-xl font-normal`}
+                } text-xl font-normal cursor-pointer`}
               >
                 Methodology
               </Link>
@@ -123,7 +125,7 @@ const Navbar = () => {
                 onClick={() => handleClick('team')}
                 className={`${
                   activeLink === 'team' ? 'active' : ''
-                } text-xl font-normal`}
+                } text-xl font-normal cursor-pointer`}
               >
                 Team
               </Link>
@@ -139,7 +141,7 @@ const Navbar = () => {
                 onClick={() => handleClick('contact')}
                 className={`${
                   activeLink === 'contact' ? 'active' : ''
-                } text-xl font-normal`}
+                } text-xl font-normal cursor-pointer`}
               >
                 Contact us
               </Link>
