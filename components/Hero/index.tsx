@@ -5,29 +5,10 @@ import React, { useRef, useState, useEffect } from 'react';
 
 import Container from '../Container';
 import heroImg from '../../public/images/hero.png';
-import phone from '../../public/images/telephone.svg';
+
 import { IoIosArrowDown } from 'react-icons/io';
 
 const Hero = () => {
-  const phoneButtonRef = useRef(null);
-  const [showPhoneButton, setShowPhoneButton] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const phoneButton = phoneButtonRef.current;
-      if (phoneButton) {
-        const { top } = phoneButton.getBoundingClientRect();
-        const isButtonVisible = top >= 0;
-        setShowPhoneButton(isButtonVisible);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
     <div
       id="home"
@@ -56,7 +37,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="pb-20 md:pb-11 absolute justify-center bottom-0 left-[37%] md:left-1/2">
-            {showPhoneButton && (
+            {
               <button
                 onClick={() =>
                   window.scrollTo({
@@ -69,16 +50,12 @@ const Hero = () => {
                 <span className="text-lg text-white">Scroll Down</span>
                 <IoIosArrowDown className="text-white" />
               </button>
-            )}
+            }
           </div>
         </Container>
       </div>
 
-      <div
-        id="phone_call"
-        className=" fixed bottom-0 pb-12 right-0"
-        ref={phoneButtonRef}
-      >
+      <div id="phone_call" className=" fixed bottom-0 pb-12 right-0">
         <button className="w-[80px] grid place-items-center h-[80px] rounded-full bg-orange text-white">
           <BsFillTelephoneFill size={32} />
         </button>
