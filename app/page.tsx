@@ -5,8 +5,6 @@ import Methodology from '@/components/Methodology';
 import Quote from '@/components/Quote';
 import Services from '@/components/Services';
 import Team from '@/components/Team';
-import Test from '@/components/Test';
-import Image from 'next/image';
 
 export default function Home() {
   return (

@@ -47,7 +47,7 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleClick = (section: any): void => {
+  const handleClick = (section: string): void => {
     setActiveLink(section);
   };
   return (
