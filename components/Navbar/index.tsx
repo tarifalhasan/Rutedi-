@@ -51,9 +51,9 @@ const Navbar = () => {
     setActiveLink(section);
   };
   return (
-    <nav
+    <div
       className={`fixed top-0 text-white w-full py-5 hidden border xl:block border-navbar-border  z-50 transition-colors duration-300 ${
-        isScrolled ? 'bg-[#34569C]' : 'bg-transparent'
+        isScrolled ? 'bg-primary' : 'bg-transparent'
       }`}
     >
       <Container>
@@ -149,7 +149,7 @@ const Navbar = () => {
           </ul>
         </div>
       </Container>
-    </nav>
+    </div>
   );
 };
 

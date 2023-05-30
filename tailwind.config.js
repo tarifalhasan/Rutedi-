@@ -20,6 +20,9 @@ module.exports = {
         'slate-900': '#1A1A1A',
         'navbar-border': 'rgba(159, 162, 180, 0.5)',
         muted: '#F7F7F7',
+        'sky-50': '#E1F4FF',
+        'orange-50': '#FFF4DE',
+        primary: '#34569C',
       },
       fontSize: {
         '5xl': [

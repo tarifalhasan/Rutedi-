@@ -34,7 +34,11 @@ const Methodology = () => {
     <div
       className={`${bg} min-h-[440px] rounded-md gap-10 py-10 px-7 flex flex-col lg:flex-row items-center`}
     >
-      <div className={imgOrder}>
+      <div
+        className={` ${
+          imgOrder == 'order-first' ? 'basis-[40%]' : ''
+        } ${imgOrder}`}
+      >
         <Image className=" w-full object-cover" src={image} alt="immertion" />
       </div>
       <div className=" space-y-4">
@@ -63,7 +67,7 @@ const Methodology = () => {
       <Container>
         <div className="  ">
           <div className="pb-16">
-            <p className="text-base text-center text-orange font-bold">
+            <p className="text-base  text-center text-orange font-bold">
               Methodology
             </p>
             <h2 className=" text-4xl font-semibold text-center text-slate-900">
@@ -79,7 +83,7 @@ const Methodology = () => {
               imgOrder=" order-first"
               btnColor="!bg-[#FFA500]"
               btnBorderColor=" !border-[#FFA500]"
-              bg="bg-[#E1F4FF]"
+              bg="bg-sky-50"
               btnColorText=" !text-[#FFA500]"
             />
             <Card
@@ -91,7 +95,7 @@ const Methodology = () => {
               btnColor="!bg-[#1F4690]"
               btnBorderColor=" !border-[#1F4690]"
               btnColorText=" !text-[#1F4690]"
-              bg="bg-[#FFF4DE]"
+              bg="bg-orange-50"
             />
             <Card
               image={Product}
@@ -101,7 +105,7 @@ const Methodology = () => {
               imgOrder=" order-first"
               btnColor="!bg-[#FFA500]"
               btnBorderColor=" !border-[#FFA500]"
-              bg="bg-[#E1F4FF]"
+              bg="bg-sky-50"
               btnColorText=" !text-[#FFA500]"
             />
           </div>

@@ -8,7 +8,7 @@ import Team from '@/components/Team';
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Hero />
       <Services />
       <Methodology />
@@ -16,6 +16,6 @@ export default function Home() {
       <Team />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }

@@ -6,13 +6,14 @@ import React, { useRef, useState, useEffect } from 'react';
 import Container from '../Container';
 import heroImg from '../../public/images/hero.png';
 
+import bgImage from '../../public/images/bg.png';
 import { IoIosArrowDown } from 'react-icons/io';
 
 const Hero = () => {
   return (
     <div
       id="home"
-      className="relative bg-mobile-bg md:bg-bg-image bg-no-repeat w-full grid bg-cover h-full min-h-screen body-font"
+      className="h-screen min-h-[800px] md:min-h-[1020px] grid   bg-cover bg-no-repeat bg-center pb-[100px] bg-mobile-bg md:bg-bg-image relative"
     >
       <div className="relative">
         <Container>
